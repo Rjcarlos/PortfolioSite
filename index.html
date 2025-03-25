@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
+    <title>Person Portfolio Website - Home</title>
+    <script src="https://kit.fontawesome.com/7997f74173.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id = "header">
+        <div class="container">
+            <nav>
+            <img src = "images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a> </li>
+                <li><a href="#about">About</a> </li>
+                <li><a href="#services">Services</a> </li>
+                <li><a href="#portfolio">Portfolio</a> </li>
+                <li><a href="#contact">Contact</a> </li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Roan</span><br> Carlos From Guam</h1>
+            </div>
+        </div>
+    </div>
+<!-----------about------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My proficiency in front-end web development tools such as
+                        HTML, and CSS enables me to design and develop user
+                        interfaces that are both aesthetically pleasing and highly
+                        functional. Additionally, my interest in solving
+                        programming algorithms, drives me to constantly learn and
+                        improve my skills. I mainly use Visual Studio Code as my text editor, due to many of its helpful extensions, that let me maximize my productivity. I am confident that I can be a valuable
+                        asset to any software development team and look forward to
+                        contributing my skills to help achieve goals and objectives. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"  onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designer Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development using HTML, CSS, and Javascript</li>
+                            <li><span>Back-end Development</span><br>Building Interactive Websites with Javascript, Java, Python, PHP </li>
+                            <li><span>Database Management</span><br>Creating and managing databases using PHP and mySQL</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2020</span><br>ABC Stores sales associate</li>
+                            <li><span>2019</span><br>Dusit Thani banquet server</li>
+                            <li><span>2018</span><br>PIC engineer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Self taught learner using free resources</li>
+                            <li><span>2023</span><br>Associate Degree in Computer Science</li>
+                            <li><span>2020</span><br>Simon Sanchez Highschool Diploma</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------Services----------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Create the design and layout of a website or web pages.</p>
+                    <a href="#contact">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Create products that provide meaningful and enjoyable experiences for users</p>
+                    <a href="#contact">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-window-maximize"></i>
+                    <h2>Web App Development</h2>
+                    <p> Create software applications that run on web servers and are accessed through web browsers, offering dynamic and interactive experiences.</p>
+                    <a href="#contact">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------Porfolio----------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/calorieCount.png" alt="">
+                    <div class="layer">
+                        <h3>Calorie Counter</h3>
+                        <p>The app lets you keep track of your calories by inputting what you eat in the day and how much calories is in the meal. Check it out in my github repository</p>
+                        <a href="https://rjcarlos.github.io/CalorieCounter/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/spamFilter.png" alt="">
+                    <div class="layer">
+                        <h3>Spam Checker</h3>
+                        <p>The app lets you check whether the message you are suspicious for being a spam is actually one. </p>
+                        <a href="https://rjcarlos.github.io/spamFilter/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/todoApp.png" alt="">
+                    <div class="layer">
+                        <h3>ToDo List</h3>
+                        <p>The app lets you create a to do list to keep track of your work/day. All your data will be stored withing your browsers local storage. Check it out in my github repository</p>
+                        <a href="https://rjcarlos.github.io/toDoApp/" ><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-------------contact--------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> rjceverything@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> (671) 858-6693</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/roanjoshua.carlos"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/roan_jc/"><i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <a href="images/Roan Carlos VITae appDeveloper.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name"  placeholder="You Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Roan. Made by <i class="fa-solid fa-heart"></i> Roan Carlos</p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+       
+
+        for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+        event.currentTarget.classList.add("active-link"); 
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openmenu(){
+            sidemenu.style.right = "0";
+
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+            
+        }
+    </script>
+
+    
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzMaioQyQbLfuh8q_qL6Rv-_8hkfM8wfTTlTscYdATE9pO9uIvnr9LQTg7diLv8EAzV/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
